@@ -58,30 +58,38 @@ var renderUsuarios = /*#__PURE__*/function () {
 exports.renderUsuarios = renderUsuarios;
 
 var anadirUsuario = /*#__PURE__*/function () {
-  var _ref2 = (0, _asyncToGenerator2["default"])( /*#__PURE__*/_regenerator["default"].mark(function _callee2(req, res) {
-    var usuario, usuarioGuardado;
+  var _ref2 = (0, _asyncToGenerator2["default"])( /*#__PURE__*/_regenerator["default"].mark(function _callee2(req, res, next) {
+    var usuario;
     return _regenerator["default"].wrap(function _callee2$(_context2) {
       while (1) {
         switch (_context2.prev = _context2.next) {
           case 0:
-            usuario = (0, _Usuario["default"])(req.body);
-            _context2.next = 3;
+            _context2.prev = 0;
+            usuario = new _Usuario["default"](req.body);
+            _context2.next = 4;
             return usuario.save();
 
-          case 3:
-            usuarioGuardado = _context2.sent;
-            console.log(usuarioGuardado);
-            res.send("Registrando Usuario");
+          case 4:
+            res.redirect("/");
+            _context2.next = 10;
+            break;
 
-          case 6:
+          case 7:
+            _context2.prev = 7;
+            _context2.t0 = _context2["catch"](0);
+            return _context2.abrupt("return", res.render("error", {
+              errorMessage: _context2.t0.message
+            }));
+
+          case 10:
           case "end":
             return _context2.stop();
         }
       }
-    }, _callee2);
+    }, _callee2, null, [[0, 7]]);
   }));
 
-  return function anadirUsuario(_x3, _x4) {
+  return function anadirUsuario(_x3, _x4, _x5) {
     return _ref2.apply(this, arguments);
   };
 }();
