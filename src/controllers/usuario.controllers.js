@@ -11,15 +11,10 @@ export const renderUsuarios = async (req, res) => {
   }
 };
 
-
 export const anadirUsuario = async (req, res, next) => {
-  try {
-    const usuario = new Usuario(req.body);
-    await usuario.save();
-    res.redirect("/");
-  } catch (error) {
-    return res.render("error", { errorMessage: error.message });
-  }
+  const usuario = Usuario(req.body);
+  console.log(task);
+  res.send("saved");
 };
 
 export const paginaFormulario = (req, res) => {

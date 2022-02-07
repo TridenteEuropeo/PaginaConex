@@ -64,29 +64,16 @@ var anadirUsuario = /*#__PURE__*/function () {
       while (1) {
         switch (_context2.prev = _context2.next) {
           case 0:
-            _context2.prev = 0;
-            usuario = new _Usuario["default"](req.body);
-            _context2.next = 4;
-            return usuario.save();
+            usuario = (0, _Usuario["default"])(req.body);
+            console.log(task);
+            res.send("saved");
 
-          case 4:
-            res.redirect("/");
-            _context2.next = 10;
-            break;
-
-          case 7:
-            _context2.prev = 7;
-            _context2.t0 = _context2["catch"](0);
-            return _context2.abrupt("return", res.render("error", {
-              errorMessage: _context2.t0.message
-            }));
-
-          case 10:
+          case 3:
           case "end":
             return _context2.stop();
         }
       }
-    }, _callee2, null, [[0, 7]]);
+    }, _callee2);
   }));
 
   return function anadirUsuario(_x3, _x4, _x5) {
