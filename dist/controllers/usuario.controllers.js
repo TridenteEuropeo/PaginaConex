@@ -65,7 +65,7 @@ var anadirUsuario = /*#__PURE__*/function () {
         switch (_context2.prev = _context2.next) {
           case 0:
             usuario = (0, _Usuario["default"])(req.body);
-            console.log(task);
+            console.log(usuario);
             res.send("saved");
 
           case 3:
