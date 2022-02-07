@@ -12,7 +12,7 @@ const router = Router();
 
 //Renderizado de nuestras rutas
 router.get("/", renderUsuarios);
-router.post("/", anadirUsuario);
+router.post("/Usuario/add", anadirUsuario);
 router.get("/Formulario", paginaFormulario);
 router.get("/personajes", paginaPersonajes);
 
