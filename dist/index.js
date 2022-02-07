@@ -4,10 +4,8 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 
 var _app = _interopRequireDefault(require("./app"));
 
-require("./database");
-
 require("./utils/mongoose");
 
-_app["default"].listen(3000);
+_app["default"].listen(_app["default"].get("port"));
 
-console.log("Servidor en puerto", 3000);
+console.log("server on port ".concat(_app["default"].get("port")));
