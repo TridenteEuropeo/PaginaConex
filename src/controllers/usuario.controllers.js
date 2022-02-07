@@ -16,7 +16,7 @@ export const anadirUsuario = async (req, res) => {
   
     const usuarioGuardado = await usuario.save();
     console.log(usuarioGuardado);
-    res.render("Registrando Usuario");
+    res.send("Registrando Usuario");
   }
 
 export const paginaFormulario = (req, res) => {
