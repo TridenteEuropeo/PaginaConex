@@ -20,7 +20,7 @@ router.get("/Formulario", (req, res) => {
   res.render("formulario");
 });
 router.get("/personajes", (req, res) => {
-  res.render("/personajes");
+  res.render("personajes");
 });
 
 router.get("/edit", (req, res) => {

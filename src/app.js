@@ -23,4 +23,6 @@ app.use(morgan("start"));
 app.use(express.urlencoded({ extended: false }));
 //rutas
 app.use(indexRoutes);
+//archivos estaticos
+app.use(express.static(path.join(__dirname, "public")));
 export default app;
