@@ -1,6 +1,2 @@
-#variables de entorno
-.env
-#dependecias del node
-node_modules
 #carpeta build
 .dist
