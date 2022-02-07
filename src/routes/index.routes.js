@@ -6,8 +6,16 @@ import Usuario from "../models/Usuario";
 const router = Router();
 
 //Renderizado de nuestras rutas
-router.get("/", (req, res) => {
-  res.render("index");
+router.get("/", async (req, res) => {
+  try {
+    const tasks = await Task.find().lean();
+    res.render("index", {
+      tasks,
+    });
+  } catch (error) {
+    console.log({ error });
+    return res.render("error", { errorMessage: error.message });
+  }
 });
 router.post("/Usuario/add", async (req, res) => {
   const usuario = Usuario(req.body);
