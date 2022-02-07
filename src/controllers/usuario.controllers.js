@@ -13,6 +13,7 @@ export const renderUsuarios = async (req, res) => {
 
 export const anadirUsuario = async (req, res, next) => {
   const usuario = Usuario(req.body);
+  const usuarioGuardado = await usuario.save();
   console.log(usuario);
   res.send("saved");
 };

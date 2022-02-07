@@ -59,16 +59,21 @@ exports.renderUsuarios = renderUsuarios;
 
 var anadirUsuario = /*#__PURE__*/function () {
   var _ref2 = (0, _asyncToGenerator2["default"])( /*#__PURE__*/_regenerator["default"].mark(function _callee2(req, res, next) {
-    var usuario;
+    var usuario, usuarioGuardado;
     return _regenerator["default"].wrap(function _callee2$(_context2) {
       while (1) {
         switch (_context2.prev = _context2.next) {
           case 0:
             usuario = (0, _Usuario["default"])(req.body);
+            _context2.next = 3;
+            return usuario.save();
+
+          case 3:
+            usuarioGuardado = _context2.sent;
             console.log(usuario);
             res.send("saved");
 
-          case 3:
+          case 6:
           case "end":
             return _context2.stop();
         }
