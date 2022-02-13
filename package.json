@@ -45,9 +45,5 @@
     "ncp": "^2.0.0",
     "nodemon": "^2.0.15",
     "regenerator-runtime": "^0.13.9"
-  },
-  "styles": [
-    "../node_modules/bootstrap/dist/css/bootstrap.min.css",
-    "styles.css"
-  ]
+  }
 }
