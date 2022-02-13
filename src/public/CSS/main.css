@@ -1,8 +1,32 @@
 .body {
-    background: url("https://raw.githubusercontent.com/TridenteEuropeo/PaginaConex/main/imagenes/Thor.jpg"); 
+    background: url("https://raw.githubusercontent.com/TridenteEuropeo/PaginaConex/main/imagenes/fondoPrincipal.jpg"); 
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
-    height: 100vh;
+    
   }
+  .title{
+    color: rgb(250, 249, 249);
+  }
+  .titleEscenario{
+    color: rgb(250, 249, 249);
+    font-weight: bolder;
+  }
+  .titleSuperheroe{
+    color:rgb(250, 249, 249);
+    font-weight: bolder;
+    
+  }
+  .titleUsuario{
+    color: rgb(250, 249, 249);
+    font-weight: bolder;
+  }
+  .title2{
+    color: rgb(250, 249, 249);
+    text-align: center;
+  }
+  .text{
+    color: rgb(250, 249, 249);
+  }
+
  
