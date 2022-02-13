@@ -2,7 +2,6 @@ import path from "path";
 import express from "express";
 import morgan from "morgan";
 import { create } from "express-handlebars";
-
 import indexRoutes from "./routes/index.routes";
 
 const app = express();
