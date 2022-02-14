@@ -3,8 +3,9 @@ import express from "express";
 import morgan from "morgan";
 import { create } from "express-handlebars";
 import indexRoutes from "./routes/index.routes";
-
+import ChartsEmbedSDK from "@mongodb-js/charts-embed-dom";
 const app = express();
+
 
 // settings
 app.set("port", process.env.PORT || 3000);
@@ -33,5 +34,9 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use((req, res, next) => {
   res.status(404).render("404");
 });
+
+
+
+
 
 export default app;

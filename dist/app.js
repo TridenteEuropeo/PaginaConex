@@ -17,6 +17,8 @@ var _expressHandlebars = require("express-handlebars");
 
 var _index = _interopRequireDefault(require("./routes/index.routes"));
 
+var _chartsEmbedDom = _interopRequireDefault(require("@mongodb-js/charts-embed-dom"));
+
 var app = (0, _express["default"])(); // settings
 
 app.set("port", process.env.PORT || 3000);
