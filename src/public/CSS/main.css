@@ -26,4 +26,6 @@
 .text {
   color: rgb(250, 249, 249);
 }
-
+.btnposition{
+  text-align: center;
+}
